@@ -31,6 +31,7 @@ public class CarDaoWeb implements CarDao{
     public List<Car> getCarLimited(String chekCount) {
         return CarDaoWeb.getCarLimitedStstic(chekCount);
     }
+    @Override
     public String getChekCount(HttpServletRequest request){
         String chekCount=request.getParameter("count");
         return chekCount;
